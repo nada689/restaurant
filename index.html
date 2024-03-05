@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body >
+<header id="header" class="navbar" >
+    <div class="container">
+        <a class="navbar-brand" id="logo" href="#home">
+            <img src="img/logo.png" alt="Logo"/>
+        </a>
+        <nav id="nav" >
+            <ul class="nav justify-content-end  flex-md-row">
+                <li class="nav-item">
+                    <a class="flex-md-fill text-md-center nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="flex-md text-md-center nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
+                <li class="flex-md text-md-center nav-item">
+                    <a class="nav-link" href="#chefs">Chefs</a>
+                </li>
+                <li class="flex-md text-md-center nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+                <li class="flex-md text-md-center nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="flex-md text-md-center nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+<main >
+    <div id="home">
+        <div class="cont">
+            <div>
+                <h1>Best quality food</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Molestias provident laborum, recusandae delectus corrupti reprehenderit error eligendi qui 
+                     consequuntur officia.</p>
+                     <a class="btn btn-warning" href="#booking-table">book a table</a>
+            </div>
+        </div>
+    </div>
+    <section id="special-dishes">
+        <div class="title-center">
+            <h2><span>☘️</span> Our Special Dishes</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, labore quasi temporibus consectetur suscipit sunt tenetur, veniam neque distinctio fugit in sint natus deserunt hic eaque dolores.</p>
+         </div>
+         <div class="row blog">
+            <div class="col-md-12">
+               <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#blogCarousel" data-slide-to="1"></li>
+           </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+               <div class="row">
+                  <div class="col">
+                     <div class="card" >
+                        <img src="img/special-dishes-3.jpg" class="card-img-top" alt="special-dishes-content">
+                        <div class="card-body">
+                           <h3 class="card-title">Beef Burger Meal</h3>
+                           <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
+                           <p class="price">$12.99</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col">
+                     <div class="card" >
+                        <img src="img/special-dishes-4.jpg" class="card-img-top" alt="special-dishes-content">
+                        <div class="card-body">
+                           <h3 class="card-title">Double Cheese Pizza</h3>
+                           <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
+                           <p class="price">$15.00</p>
+                        </div>
+                       </div>
+                  </div>
+
+                  <div class="col">
+                     <div class="card" >
+                        <img src="img/special-dishes-5.png" class="card-img-top" alt="special-dishes-content">
+                        <div class="card-body">
+                           <h3 class="card-title">Ceaser Salad</h3>
+                           <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
+                           <p class="price">$10.00</p>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="col">
+                     <div class="card" >
+                        <img src="img/special-dishes-2.jpg" class="card-img-top" alt="special-dishes-content">
+                        <div class="card-body">
+                           <h3 class="card-title">Pasta</h3>
+                           <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
+                           <p class="price">$11.30</p>
+                     </div>
+                     </div>
+                  </div>
+
+                  <div class="col">
+                     <div class="card" >
+                        <img src="img/special-dishes-1.png" class="card-img-top" alt="special-dishes-content">
+                        <div class="card-body">
+                           <h3 class="card-title">Burger</h3>
+                           <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. </p>
+                           <p class="price">$8.60</p>
+                        </div>
+                     </div>
+
+               </div>         
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon"></span>
+             </button>
+             <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+               <span class="carousel-control-next-icon"></span>
+             </button>
+           </div>
+          </div>
+            </div>
+        </div>
+         </div>
+         
+    </section>
+    <section id="about-us">
+      <div class="about">
+         <div class="about-img">
+            <img src="img/about-big.jpg" alt="">
+            <a href="http://www.youtube.com/watch?v=0O2aH4XLbto"><i class="fa-solid fa-play"></i></a>
+         </div>
+         <div class="about-content">
+            <h2><span>☘️</span>Good food for your all day good mood</h2>
+            <p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Itaque dolore nisi ipsa neque? Dolorem incidunt fugiat temporibus animi nobis, vero expedita voluptate dignissimos officiis quis pariatur earum voluptas quia sed.</p>
+            <p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Itaque dolore nisi ipsa neque? Dolorem incidunt fugiat temporibus animi nobis, vero expedita voluptate dignissimos officiis quis pariatur earum voluptas quia sed.</p>
+            <p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Itaque dolore nisi ipsa neque? Dolorem incidunt fugiat temporibus animi nobis, vero expedita voluptate dignissimos officiis quis pariatur earum voluptas quia sed.</p>
+            <div class="advantage">
+               <div>
+                  <img src="img/advantage-1 (1).png" alt="Experienced chefs">
+                  <p>Experienced chefs</p>
+               </div>
+               <div>
+                  <img src="img/advantage-2.png" alt="Original recipes">
+                  <p>Original recipes</p>
+               </div>
+               <div>
+                  <img src="img/advantage-3 (1).png" alt="Fresh ingredients">
+                  <p>Fresh ingredients</p>
+               </div>
+            </div>
+         </div>
+    </section>
+    <section id="offer" >
+      <div class="offer">
+         <h2>Double Cheese Pizza <br>30% off friday only</h2>
+         <a class="btn btn-warning" href="#booking-table">book a table</a>   
+      </div>
+   </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="java.js"></script>
+</body>
+</html>

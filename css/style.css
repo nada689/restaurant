@@ -1,0 +1,199 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+  }
+body {
+    
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 18px;
+  }
+.nav-item a{
+    color: aliceblue ;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.nav-item a:hover{
+    color: yellow;
+}
+#header ,#home{
+    background:url('img/bg-header.png') no-repeat center fixed;
+    background-size: cover;
+  
+}
+#home{
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
+    padding: 3% 7%;
+    height:  30rem;
+    .cont{
+        width: 50%;
+        h1{
+            color: white;
+            font-weight: bold;
+            font-size: 4rem;
+            text-transform: uppercase;
+        }
+        p{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .btn{
+            font-weight: 900;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+        }
+    }
+}
+#special-dishes{
+    background:scroll;
+    background-color: black;
+    padding: 20px;
+    height:  120vh;
+    h2{
+        color: white;
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        span{
+            font-size: 3rem;
+        }
+    }
+    p{
+        color:darkgray;
+        font-size: 1.3rem;
+        text-align: center;
+        width:  80%;
+        padding:  10px;
+        margin:  auto;
+    }
+    
+    .card{
+        background-color: inherit;
+        height: 80vh;
+        margin: 2px;
+
+        .card-body{
+            text-align: center;
+            color: white;
+            h3{
+                font-size: 1.3rem;
+            }
+            .card-text{
+                font-size: 0.9rem;
+                width:  120%;
+                position: relative;
+                left: -20px;
+            }
+            .price{
+                color: yellow;
+                font-size: 1rem;
+                font-weight: bold;
+
+            }
+            img{
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+    .carousel-control-prev-icon , .carousel-control-next-icon{
+        position: relative;
+        top: 200px;
+        width:  20px;
+
+    }
+    .carousel-control-prev-icon{
+        right: -450px;
+    }
+    .carousel-control-next-icon{
+        left: -440px;
+    }
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: scroll;
+    background:url('img/bg-pattern.jpg') no-repeat center ;
+    background-size: cover;
+    padding-top: 100px;
+    padding-right: 20px;
+    padding-left: 20px;
+   .about-img {
+    img{
+        width: 30rem;
+        padding: 20px;
+
+    }
+    a{
+        position: relative;
+        top: -350px;
+        right:  -230px;
+        width: 70px;
+        height: 70px;
+        color: #000;
+        text-decoration: none;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: yellow;
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+
+}
+a:hover{
+    color: aliceblue;
+    background: azure;
+}
+
+}
+.about-content{
+    padding: 20px;
+    h2{
+        color: white;
+        font-size: 3.2rem;
+        word-spacing: -.3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    p{
+        color:rgb(139, 141, 132);
+    }
+}
+.advantage{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+}
+#offer{
+    background:url('img/bg-offer\ \(1\).png') no-repeat center fixed;
+    background-size: cover;
+    .offer{
+        height: 50vh;
+        padding: 50px;
+        h2{
+            color: white;
+            font-weight: bold;
+            font-size:2.7rem;
+            text-transform: uppercase;
+
+        }
+        .btn{
+            font-weight: 900;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+        }
+    }
+}
