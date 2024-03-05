@@ -19,6 +19,7 @@ body {
 #header ,#home{
     background:url('img/bg-header.png') no-repeat center fixed;
     background-size: cover;
+    
   
 }
 #home{
@@ -26,7 +27,7 @@ body {
     width: 100%;
     margin: auto;
     padding: 3% 7%;
-    height:  30rem;
+    
     .cont{
         width: 50%;
         h1{
@@ -50,9 +51,12 @@ body {
 }
 #special-dishes{
     background:scroll;
+    background-size: cover;
     background-color: black;
     padding: 20px;
-    height:  120vh;
+
+    box-sizing: border-box;
+ 
     h2{
         color: white;
         font-weight: bold;
@@ -76,7 +80,10 @@ body {
         background-color: inherit;
         height: 80vh;
         margin: 2px;
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
         .card-body{
             text-align: center;
             color: white;
@@ -119,6 +126,7 @@ body {
     justify-content: space-between;
     flex-direction: row;
     background: scroll;
+    background-size: cover;
     background:url('img/bg-pattern.jpg') no-repeat center ;
     background-size: cover;
     padding-top: 100px;
@@ -178,7 +186,7 @@ a:hover{
 }
 }
 #offer{
-    background:url('img/bg-offer\ \(1\).png') no-repeat center fixed;
+    background:url('img/bg-offer\ \(1\).png') no-repeat center ;
     background-size: cover;
     .offer{
         height: 50vh;
