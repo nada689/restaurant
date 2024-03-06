@@ -273,7 +273,7 @@ a:hover{
 /*end section two*/
 
 /*media*/
-@media screen and (max-width: 380px){
+@media screen and (max-width: 414px){
     .about{
         flex-direction: column;
         .about-img img {
