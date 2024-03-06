@@ -1,12 +1,47 @@
-*, ::after, ::before {
-    box-sizing: border-box;
-  }
+
 body {
-    
+    width: 100vm;
+    height: 100vh;
+    overflow-x: hidden;
     font-weight: 400;
     line-height: 1.5;
     font-size: 18px;
   }
+/* Keyframe animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+  /*navbar*/
 .nav-item a{
     color: aliceblue ;
     font-size: 20px;
@@ -16,6 +51,10 @@ body {
 .nav-item a:hover{
     color: yellow;
 }
+/*end navbar*/
+
+/*section one*/
+
 #header ,#home{
     background:url('img/bg-header.png') no-repeat center fixed;
     background-size: cover;
@@ -49,14 +88,16 @@ body {
         }
     }
 }
+/*special-dishes*/
 #special-dishes{
-    background:scroll;
+    background: scroll;
     background-size: cover;
     background-color: black;
     padding: 20px;
-
+    overflow: hidden;
     box-sizing: border-box;
- 
+    flex-wrap: wrap;
+
     h2{
         color: white;
         font-weight: bold;
@@ -68,22 +109,23 @@ body {
         }
     }
     p{
-        color:darkgray;
+        color: darkgray;
         font-size: 1.3rem;
         text-align: center;
-        width:  80%;
-        padding:  10px;
-        margin:  auto;
+        padding: 10px;
     }
     
     .card{
         background-color: inherit;
         height: 80vh;
-        margin: 2px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
+        :hover {
+            transform: scale(1.1);
+        }
+
         .card-body{
             text-align: center;
             color: white;
@@ -92,7 +134,7 @@ body {
             }
             .card-text{
                 font-size: 0.9rem;
-                width:  120%;
+                width: 120%;
                 position: relative;
                 left: -20px;
             }
@@ -104,27 +146,47 @@ body {
             }
             img{
                 width: 250px;
-                height: 250px;
-            }
+                /*Adjustasneeded*/height: 250px;
+                transition: transform 0.3s ease -in-out;
+                -webkit-transition: transform 0.3s ease ;
+                -moz-transition: transform 0.3s ease ;
+                -ms-transition: transform 0.3s ease ;
+                -o-transition: transform 0.3s ease ;
+}
         }
+
     }
     .carousel-control-prev-icon , .carousel-control-next-icon{
         position: relative;
         top: 200px;
-        width:  20px;
+        width: 20px;
+        margin-bottom: 20px;
 
     }
     .carousel-control-prev-icon{
         right: -450px;
+        
     }
     .carousel-control-next-icon{
         left: -440px;
+        
     }
 }
+.card:hover {
+    transform: scale(1.1);
+}
+/*end special-dishes*/
+
+/*end section one*/
+
+/*start section two*/
+
+/* about */
 .about{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    gap: 20px;
     background: scroll;
     background-size: cover;
     background:url('img/bg-pattern.jpg') no-repeat center ;
@@ -132,11 +194,10 @@ body {
     padding-top: 100px;
     padding-right: 20px;
     padding-left: 20px;
+
    .about-img {
     img{
         width: 30rem;
-        padding: 20px;
-
     }
     a{
         position: relative;
@@ -165,7 +226,6 @@ a:hover{
 
 }
 .about-content{
-    padding: 20px;
     h2{
         color: white;
         font-size: 3.2rem;
@@ -185,8 +245,11 @@ a:hover{
     padding: 20px;
 }
 }
+/*end about */
+
+/*offer*/
 #offer{
-    background:url('img/bg-offer\ \(1\).png') no-repeat center ;
+    background:url('img/bg-offer.png') no-repeat center fixed;
     background-size: cover;
     .offer{
         height: 50vh;
@@ -205,3 +268,4 @@ a:hover{
         }
     }
 }
+/*end section two*/
