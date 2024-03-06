@@ -197,6 +197,7 @@ body {
 
    .about-img {
     img{
+        
         width: 30rem;
     }
     a{
@@ -252,7 +253,7 @@ a:hover{
     background:url('img/bg-offer.png') no-repeat center fixed;
     background-size: cover;
     .offer{
-        height: 50vh;
+        height: auto;
         padding: 50px;
         h2{
             color: white;
@@ -268,4 +269,22 @@ a:hover{
         }
     }
 }
+/* end offer */
 /*end section two*/
+
+/*media*/
+@media screen and (max-width: 380px){
+    .about{
+        flex-direction: column;
+        .about-img img {
+            width:80%;
+            padding-left: 30px;
+        }
+        .about-img a{
+            width: 25px;
+            height:  25px;
+            top:  -200px;
+            right:-160px;
+        }
+    }
+}
