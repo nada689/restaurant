@@ -63,6 +63,11 @@ body {
 }
 .nav-item a:hover{
     color: yellow;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
 }
 
 
@@ -189,7 +194,16 @@ body {
     
 }
 .card:hover {
-    transform: scale(1.1);
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transform: scale(1.51);
+    -webkit-transform: scale(1.51);
+    -moz-transform: scale(1.51);
+    -ms-transform: scale(1.51);
+    -o-transform: scale(1.51);
 }
 /*end special-dishes*/
 
@@ -239,6 +253,11 @@ body {
 a:hover{
     color: aliceblue;
     background: azure;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
 }
 
 }

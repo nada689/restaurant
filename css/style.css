@@ -60,6 +60,11 @@ body {
 }
 .nav-item a:hover {
     color: yellow;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
 }
 /*end navbar*/
 /*section one*/
@@ -124,7 +129,16 @@ body {
     box-sizing: border-box;
 }
 #special-dishes .card :hover, #chef .card :hover, .chef .card :hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
 }
 #special-dishes .card .card-body, #chef .card .card-body, .chef .card .card-body {
     text-align: center;
@@ -169,7 +183,16 @@ body {
     left: -440px;
 }
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
 }
 /*end special-dishes*/
 /*end section one*/
