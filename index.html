@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body >
+   <!---Navbar--->
 <header id="header" class="navbar" >
     <div class="container">
         <a class="navbar-brand" id="logo" href="#home">
@@ -16,12 +19,13 @@
         </a>
         <nav id="nav" >
             <ul class="nav justify-content-end  flex-md-row">
+               
                 <li class="nav-item">
                     <a class="flex-md-fill text-md-center nav-link active" aria-current="page" href="#home">Home</a>
                 </li>
                 <li class="flex-md text-md-center nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
                 <li class="flex-md text-md-center nav-item">
-                    <a class="nav-link" href="#chefs">Chefs</a>
+                    <a class="nav-link" href="#chef">Chefs</a>
                 </li>
                 <li class="flex-md text-md-center nav-item">
                     <a class="nav-link" href="#menu">Menu</a>
@@ -37,7 +41,10 @@
     </div>
 
 </header>
+   <!--Navbar-->
+
 <main >
+   <!--home-->
     <div id="home">
         <div class="cont">
             <div>
@@ -45,10 +52,13 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                      Molestias provident laborum, recusandae delectus corrupti reprehenderit error eligendi qui 
                      consequuntur officia.</p>
-                     <a class="btn btn-warning" href="#booking-table">book a table</a>
+                  <a class="btn btn-warning" href="#booking-table">book a table</a>
             </div>
         </div>
     </div>
+    <!--End home-->
+
+    <!--special dishes section-->
     <section id="special-dishes">
       <div class="title-center">
           <h2><span>☘️</span> Our Special Dishes</h2>
@@ -58,11 +68,11 @@
           <div class="col-md-12">
               <div id="blogCarousel" class="carousel slide" data-ride="carousel">
                   <ol class="carousel-indicators">
-                      <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#blogCarousel" data-slide-to="1"></li>
+                      <li data-target="#blogCarousel" data-bs-slide-to="0"  class="active"></li>
+                      <li data-target="#blogCarousel" data-bs-slide-to="1" ></li>
                   </ol>
                   <div class="carousel-inner">
-                      <div class="carousel-item active">
+                      <div class="carousel-item active" >
                           <div class="row">
                               <div class="col">
                                  <div class="card" >
@@ -120,11 +130,9 @@
 
                </div>         
             </div>
-            
-                      <!-- Add other carousel items here -->
   
                   </div>
-                  <div class="carousel-item ">
+                  <div class="carousel-item " >
                      <div class="row">
                         <div class="col">
                            <div class="card" >
@@ -183,16 +191,20 @@
                   </div>
                   </div>
                   <!-- Carousel controls -->
-                  <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="0" >
                       <span class="carousel-control-prev-icon"></span>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
+                  <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="1" >
                       <span class="carousel-control-next-icon"></span>
                   </button>
               </div>
           </div>
       </div>
   </section>
+  <!-- End Special Dishes Section -->
+
+   <!-- Start About Us Section -->
+
     <section id="about-us">
       <div class="about">
          <div class="about-img">
@@ -221,12 +233,79 @@
          </div>
          </div>
     </section>
+    <!-- End About Us Section -->
+
+    <!--- Start Offer Section --->
     <section id="offer" >
       <div class="offer">
          <h2>Double Cheese Pizza <br>30% off friday only</h2>
          <a class="btn btn-warning" href="#booking-table">book a table</a>   
       </div>
    </section>
+   <!-- End Offer Section -->
+
+   <!--- Start Chef Section --->
+   <section id="chef">
+      <div class="title-center">
+         <h2><span>☘️</span>Our best chef</h2>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, labore quasi temporibus consectetur suscipit sunt tenetur, veniam neque distinctio fugit in sint natus deserunt hic eaque dolores.</p>
+      </div>
+      
+      <div class="chef">
+         <div id="chefs-item" class="card">
+            <img class="card-img-top" src="css/img/chef-1.jpg" alt="Chef photo">
+            <div id="about-chefs" class="card-body text-center">
+               <h3 class="card-title">Richard Nauz</h3>
+               <p class="card-text">food chef</p>
+               <div class="chef-social">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+               </div>
+            </div>
+         </div>
+         <div id="chefs-item" class="card">
+            <img class="card-img-top" src="css/img/chef-2.jpg" alt="Chef photo">
+            <div id="about-chefs" class="card-body text-center">
+               <h3 class="card-title">Olivia Grosh</h3>
+               <p class="card-text">food chef</p>
+               <div class="chef-social">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+               </div>
+            </div>
+         </div>
+         <div id="chefs-item" class="card">
+            <img class="card-img-top" src="css/img/chef-3.jpg" alt="Chef photo">
+            <div id="about-chefs" class="card-body text-center">
+               <h3 class="card-title">Jeremy White</h3>
+               <p class="card-text">food chef</p>
+               <div class="chef-social">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+               </div>
+            </div>
+         </div>
+         <div id="chefs-item" class="card">
+            <img class="card-img-top" src="css/img/chef-4.jpg" alt="Chef photo">
+            <div id="about-chefs" class="card-body text-center">
+               <h3 class="card-title">Howard Holmes</h3>
+               <p class="card-text">food chef</p>
+               <div class="chef-social">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+      </div>
+   </section>
+   <!-- End Chef Section -->
 </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <script src="java.js"></script>
