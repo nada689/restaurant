@@ -288,7 +288,7 @@ a:hover{
 /* end offer */
 /*end section two*/
 
-/*section three*/
+/*start chef*/
 .chef{
     display: flex;
     flex-flow: row;
@@ -305,7 +305,7 @@ a:hover{
     }
     
 }
-
+/*end chef*/
 /*media*/
 @media screen and (max-width: 414px){
     #home{
