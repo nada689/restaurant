@@ -27,7 +27,7 @@ function filterSelection(c) {
     }
     for (i = 0; i < x.length; i++) {
         if (x[i].className.indexOf(c) > -1) {
-            x[i].style.display = "block";
+            x[i].style.display = "inline-flex";
         } else {
             x[i].style.display = "none";
         }

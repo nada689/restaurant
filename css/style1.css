@@ -138,9 +138,6 @@ body {
         background-color: inherit;
         height: 80vh;
         box-sizing: border-box;
-        :hover {
-            transform: scale(1.1);
-        }
 
         .card-body{
             text-align: center;
@@ -161,12 +158,6 @@ body {
 }
 #special-dishes .card{
     flex-wrap: wrap;
-    transition: transform 0.3s ease-in-out;
-    -webkit-transition: transform 0.3s ease-in-out;
-    -moz-transition: transform 0.3s ease-in-out;
-    -ms-transition: transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out;
-
     .price{
         color: yellow;
         font-size: 1rem;
@@ -194,16 +185,16 @@ body {
     
 }
 .card:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
     transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
     -ms-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
-    transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -o-transform: scale(1.5);
 }
 /*end special-dishes*/
 
@@ -248,11 +239,17 @@ body {
         -webkit-box-direction: normal;
         -webkit-box-pack: center;
         -webkit-box-align: center;
-
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
 }
 a:hover{
     color: aliceblue;
     background: azure;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
     transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
@@ -325,6 +322,109 @@ a:hover{
     
 }
 /*end chef*/
+/*start menu*/
+
+#menu {
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background:url('img/bg-pattern.jpg') no-repeat center fixed;
+    background-size: cover;
+    #myBtnContainer{
+        text-align: center;
+        .btn{
+            text-transform: uppercase;
+            font-weight:800;
+            border-radius: 0;
+            margin: 15px;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+}
+        }
+    h2{
+        color: white;
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        span{
+            font-size: 3rem;
+        }
+    }
+
+   .row{
+    flex-flow: row;
+   }
+   .column{
+    flex-flow: column;
+   }
+    
+    #content{
+        background-color: inherit;
+        height: 80vh;
+
+        .price{
+            color: yellow;
+            font-size: 1rem;
+            font-weight: bold;
+    
+        }
+        img{
+            width: 200px;
+            height: 200px;
+    }
+        .card-body{
+           
+            color: white;
+            h3{
+                font-size: 1.3rem;
+            }
+            .card-text{
+                font-size: 0.9rem;
+                width: 120%;
+                position: relative;
+                left: -20px;
+            }
+
+        }
+
+    }
+}
+/*end menu*/
+
+/*start gallery*/
+#gallery{
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background:black no-repeat center fixed;
+    background-size: cover;
+    img:hover{
+        color: azure;
+
+    }
+    h2{
+        color: white;
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        span{
+            font-size: 3rem;
+        }
+    }
+    .gallery{
+        text-align: center;
+    }
+    img{
+        display:inline-flex;
+        width: 30%;
+        height: 30%;
+    }
+}
+
 /*media*/
 @media screen and (max-width: 414px){
     #home{
