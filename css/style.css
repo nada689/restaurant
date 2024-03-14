@@ -294,6 +294,97 @@ body {
     color: yellow;
 }
 /*end chef*/
+/*start menu*/
+#menu {
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background: url('img/bg-pattern.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+#menu #myBtnContainer {
+    text-align: center;
+}
+#menu #myBtnContainer .btn {
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 0;
+    margin: 15px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+#menu h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+#menu h2 span {
+    font-size: 3rem;
+}
+
+#menu .colu {
+    flex-flow: column;
+}
+#menu #content {
+    background-color: inherit;
+    height: 80vh;
+}
+#menu #content .price {
+    color: yellow;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#menu #content img {
+    width: 200px;
+    height: 200px;
+}
+#menu #content .card-body {
+    color: white;
+}
+#menu #content .card-body h3 {
+    font-size: 1.3rem;
+}
+#menu #content .card-body .card-text {
+    font-size: 0.9rem;
+    width: 120%;
+    position: relative;
+    left: -20px;
+}
+/*end menu*/
+/*start gallery*/
+#gallery {
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background: black no-repeat center fixed;
+    background-size: cover;
+}
+#gallery img:hover {
+    color: azure;
+}
+#gallery h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+#gallery h2 span {
+    font-size: 3rem;
+}
+#gallery .gallery {
+    text-align: center;
+}
+#gallery img {
+    display: inline-flex;
+    width: 30%;
+    height: 30%;
+}
+
 /*media*/
 @media screen and (max-width: 414px) {
     #home {

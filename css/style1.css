@@ -328,8 +328,9 @@ a:hover{
     overflow: hidden;
     box-sizing: border-box;
     background-size: cover;
-    background:url('img/bg-pattern.jpg') no-repeat center fixed;
+    background:url('img/bg-pattern.jpg') no-repeat center ;
     background-size: cover;
+    padding:  5% 7%;
     #myBtnContainer{
         text-align: center;
         .btn{
@@ -354,17 +355,16 @@ a:hover{
         }
     }
 
-   .row{
-    flex-flow: row;
-   }
-   .column{
-    flex-flow: column;
+   .r{
+    display: flex;
+    width:  100%;
+    overflow: hidden;
+
    }
     
     #content{
         background-color: inherit;
-        height: 80vh;
-
+        align-items: center;
         .price{
             color: yellow;
             font-size: 1rem;
@@ -376,16 +376,16 @@ a:hover{
             height: 200px;
     }
         .card-body{
-           
+            text-align: center;
             color: white;
             h3{
                 font-size: 1.3rem;
+                
             }
             .card-text{
                 font-size: 0.9rem;
-                width: 120%;
-                position: relative;
-                left: -20px;
+                width: 100%;
+
             }
 
         }
@@ -396,6 +396,7 @@ a:hover{
 
 /*start gallery*/
 #gallery{
+    padding:  5% 7%;
     overflow: hidden;
     box-sizing: border-box;
     background-size: cover;
@@ -422,6 +423,125 @@ a:hover{
         display:inline-flex;
         width: 30%;
         height: 30%;
+    }
+}
+/*end gallery*/
+
+/*start book a table*/
+#booking-table {
+    padding:  5% 7%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background:url(img/bg-pattern.jpg) no-repeat center ;
+    background-size: cover;
+    h2{
+        color: white;
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        span{
+            font-size: 3rem;
+        }
+    }
+    p,i,hr,h3{
+        color:white;
+    } 
+    .colu{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row;
+    }
+    .r,.r1,.working-houres{
+        padding-top:  4%;
+        padding-bottom: 5%;
+        flex-flow: column;
+    }
+    label{
+        color: rgb(236, 196, 21);
+        font-weight: bolder;
+        font-size: small;
+    }
+    input{
+        background: #000;
+        border: none;
+        width: 300px;
+        height: 9vh;
+        color: white;
+    }
+    .btn{
+        text-transform: uppercase;
+        font-weight:800;
+        border-radius: 0;
+        margin: 15px;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+}
+    .working-houres{
+        width:  40%;
+        overflow: hidden;
+        box-sizing: border-box;
+        background-size: cover;
+        background:black no-repeat center ;
+        background-size: cover;
+        padding: 3%;
+        .table-houres p {
+            display: flex;
+            flex-flow:row ;
+            justify-content: space-between;
+        }
+    }
+}
+/*end book a table*/
+
+/*start contact*/
+#contact {
+    padding:  5% 7%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background:black no-repeat center ;
+    background-size: cover;
+    h2{
+        color: white;
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        span{
+            font-size: 3rem;
+        }
+    }
+    p,h3,.copyright a{
+        color:white;
+
+    }
+    i,a{
+        color: rgb(177, 137, 7);
+    }
+    .phone {
+        text-decoration: none;
+    }
+    .contacts{
+        padding: 5% 6%;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+       
+    }
+    .footer-social{
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    iframe{
+        width: 1100px;
+    }
+    p{
+        text-align: center;
     }
 }
 

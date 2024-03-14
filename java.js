@@ -21,13 +21,13 @@
 });*/
 function filterSelection(c) {
     var x, i;
-    x = document.getElementsByClassName("column");
+    x = document.getElementsByClassName("colu");
     if (c == "all") {
         c = "";
     }
     for (i = 0; i < x.length; i++) {
         if (x[i].className.indexOf(c) > -1) {
-            x[i].style.display = "inline-flex";
+            x[i].style.display = "block";
         } else {
             x[i].style.display = "none";
         }
