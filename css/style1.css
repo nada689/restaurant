@@ -355,14 +355,10 @@ a:hover{
         }
     }
 
-   .r{
-    display: flex;
-    width:  100%;
-    overflow: hidden;
 
-   }
     
     #content{
+        flex-flow: column;
         background-color: inherit;
         align-items: center;
         .price{
@@ -416,13 +412,14 @@ a:hover{
             font-size: 3rem;
         }
     }
-    .gallery{
-        text-align: center;
+
+    .col{
+        flex-flow: column;
+        justify-content: space-around;
     }
     img{
-        display:inline-flex;
-        width: 30%;
-        height: 30%;
+        width: 300px;
+        
     }
 }
 /*end gallery*/

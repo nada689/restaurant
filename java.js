@@ -21,7 +21,7 @@
 });*/
 function filterSelection(c) {
     var x, i;
-    x = document.getElementsByClassName("colu");
+    x = document.getElementsByClassName("col");
     if (c == "all") {
         c = "";
     }
