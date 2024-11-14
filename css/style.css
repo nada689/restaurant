@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,53 +12,56 @@ body {
     font-weight: 400;
     line-height: 1.5;
     font-size: 18px;
-}
+  }
 /* Keyframe animations */
 @keyframes fadeInDown {
     from {
         opacity: 0;
         transform: translateY(-50px);
-   }
+    }
     to {
         opacity: 1;
         transform: translateY(0);
-   }
+    }
 }
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(50px);
-   }
+    }
     to {
         opacity: 1;
         transform: translateY(0);
-   }
+    }
 }
+
 @keyframes zoomIn {
     from {
         transform: scale(0.5);
         opacity: 0;
-   }
+    }
     to {
         transform: scale(1);
         opacity: 1;
-   }
+    }
 }
-/*navbar*/
-.nav-item a {
-    color: aliceblue;
+
+  /*navbar*/
+.nav-item a{
+    color: aliceblue ;
     font-size: 20px;
     font-weight: bolder;
     text-transform: uppercase;
 }
-.nav-item .active {
-    transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
+.nav-item .active{
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
 }
-.nav-item a:hover {
+.nav-item a:hover{
     color: yellow;
     transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
@@ -66,40 +69,46 @@ body {
     -ms-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
 }
+
+
 /*end navbar*/
+
 /*section one*/
-#header, #home {
-    background: url('img/bg-header.png') no-repeat center fixed;
+
+#header ,#home{
+    background:url('img/bg-header.png') no-repeat center fixed;
     background-size: cover;
+    
+  
 }
-#home {
+#home{
     max-width: 1920px;
     width: 100%;
     margin: auto;
     padding: 3% 7%;
 }
-#home .cont {
+#home .cont{
     width: 50%;
 }
-#home .cont h1 {
+#home .cont h1{
     color: white;
     font-weight: bold;
     font-size: 4rem;
     text-transform: uppercase;
 }
-#home .cont p {
+#home .cont p{
     margin-top: 20px;
     margin-bottom: 20px;
     color: white;
     font-size: 1.2rem;
 }
-#home .cont .btn {
+#home .cont .btn{
     font-weight: 900;
     font-size: 1.4rem;
     text-transform: uppercase;
 }
 /*special-dishes*/
-#special-dishes, #chef, .chef {
+#special-dishes ,#chef, .chef{
     background: scroll;
     background-size: cover;
     background-color: black;
@@ -107,80 +116,68 @@ body {
     overflow: hidden;
     box-sizing: border-box;
 }
-#special-dishes h2, #chef h2, .chef h2 {
+#special-dishes h2 ,#chef h2, .chef h2{
     color: white;
     font-weight: bold;
     font-size: 2.5rem;
     text-transform: uppercase;
     text-align: center;
 }
-#special-dishes h2 span, #chef h2 span, .chef h2 span {
+#special-dishes h2 span,#chef h2 span, .chef h2 span{
     font-size: 3rem;
 }
-#special-dishes p, #chef p, .chef p {
+#special-dishes p ,#chef p, .chef p{
     color: darkgray;
     font-size: 1.3rem;
     text-align: center;
     padding: 10px;
 }
-#special-dishes .card, #chef .card, .chef .card {
+#special-dishes .card ,#chef .card, .chef .card{
     background-color: inherit;
     height: 80vh;
     box-sizing: border-box;
+
 }
-#special-dishes .card :hover, #chef .card :hover, .chef .card :hover {
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -ms-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-}
-#special-dishes .card .card-body, #chef .card .card-body, .chef .card .card-body {
+#special-dishes .card .card-body,#chef .card .card-body, .chef .card .card-body{
     text-align: center;
     color: white;
 }
-#special-dishes .card .card-body h3, #chef .card .card-body h3, .chef .card .card-body h3 {
+#special-dishes .card .card-body h3,#chef .card .card-body h3, .chef .card .card-body h3{
     font-size: 1.3rem;
 }
-#special-dishes .card .card-body .card-text, #chef .card .card-body .card-text, .chef .card .card-body .card-text {
+#special-dishes .card .card-body .card-text,#chef .card .card-body .card-text, .chef .card .card-body .card-text{
     font-size: 0.9rem;
     width: 120%;
     position: relative;
     left: -20px;
 }
-#special-dishes .card {
+#special-dishes .card{
     flex-wrap: wrap;
-    transition: transform 0.3s ease-in-out;
-    -webkit-transition: transform 0.3s ease-in-out;
-    -moz-transition: transform 0.3s ease-in-out;
-    -ms-transition: transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out;
 }
-#special-dishes .card .price {
+#special-dishes .card .price{
     color: yellow;
     font-size: 1rem;
     font-weight: bold;
+
 }
-#special-dishes .card img {
+#special-dishes .card img{
     width: 200px;
     height: 200px;
 }
-.carousel-control-prev-icon, .carousel-control-next-icon {
+.carousel-control-prev-icon , .carousel-control-next-icon{
     position: relative;
     top: 200px;
     width: 20px;
     margin-bottom: 20px;
+
 }
-.carousel-control-prev-icon {
+.carousel-control-prev-icon{
     right: -450px;
+    
 }
-.carousel-control-next-icon {
+.carousel-control-next-icon{
     left: -440px;
+    
 }
 .card:hover {
     transform: scale(1.05);
@@ -195,29 +192,32 @@ body {
     -o-transition: all .4s ease-in-out;
 }
 /*end special-dishes*/
+
 /*end section one*/
+
 /*start section two*/
+
 /* about */
-.about {
+.about{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     gap: 20px;
     background: scroll;
     background-size: cover;
-    background: url('img/bg-pattern.jpg') no-repeat center;
+    background:url('img/bg-pattern.jpg') no-repeat center fixed;
     background-size: cover;
     padding-top: 100px;
     padding-right: 20px;
     padding-left: 20px;
 }
-.about .about-img img {
+.about .about-img img{
     width: 30rem;
 }
-.about .about-img a {
+.about .about-img a{
     position: relative;
     top: -350px;
-    right: -230px;
+    right:  -230px;
     width: 70px;
     height: 70px;
     color: #000;
@@ -232,22 +232,34 @@ body {
     -webkit-box-direction: normal;
     -webkit-box-pack: center;
     -webkit-box-align: center;
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
-.about .about-img a:hover {
+.about .about-img a:hover{
     color: aliceblue;
     background: azure;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
 }
-.about .about-content h2 {
+.about .about-content h2{
     color: white;
     font-size: 3.2rem;
-    word-spacing: -0.3rem;
+    word-spacing: -.3rem;
     font-weight: bold;
     text-transform: uppercase;
 }
-.about .about-content p {
-    color: #8b8d84;
+.about .about-content p{
+    color:rgb(139, 141, 132);
 }
-.about .advantage {
+.about .advantage{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -255,59 +267,66 @@ body {
     padding: 20px;
 }
 /*end about */
+
 /*offer*/
-#offer {
-    background: url('img/bg-offer.png') no-repeat center fixed;
+#offer{
+    background:url('img/bg-offer.png') no-repeat center fixed;
     background-size: cover;
 }
-#offer .offer {
+#offer .offer{
     height: auto;
     padding: 50px;
 }
-#offer .offer h2 {
+#offer .offer h2{
     color: white;
     font-weight: bold;
-    font-size: 2.7rem;
+    font-size:2.7rem;
     text-transform: uppercase;
+
 }
-#offer .offer .btn {
+#offer .offer .btn{
     font-weight: 900;
     font-size: 1.4rem;
     text-transform: uppercase;
 }
 /* end offer */
 /*end section two*/
+
 /*start chef*/
-.chef {
+.chef{
     display: flex;
     flex-flow: row;
     justify-content: space-around;
 }
-.chef .card {
+.chef .card{
     flex-flow: column;
 }
-.chef .card img {
+.chef .card img{
     width: 200px;
     height: 200px;
 }
-.chef .card i {
+.chef .card i{
     color: yellow;
-}
+ }
 /*end chef*/
 /*start menu*/
+
 #menu {
     overflow: hidden;
     box-sizing: border-box;
     background-size: cover;
-    background: url('img/bg-pattern.jpg') no-repeat center fixed;
+    background:url('img/bg-pattern.jpg') no-repeat center ;
     background-size: cover;
+    padding:  5% 7%;
+
 }
-#menu #myBtnContainer {
+#menu #myBtnContainer{
     text-align: center;
-}
-#menu #myBtnContainer .btn {
+
+    }
+#menu #myBtnContainer .btn{
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight:800;
     border-radius: 0;
     margin: 15px;
     -webkit-border-radius: 0;
@@ -315,102 +334,229 @@ body {
     -ms-border-radius: 0;
     -o-border-radius: 0;
 }
-#menu h2 {
+#menu h2{
     color: white;
     font-weight: bold;
     font-size: 2.5rem;
     text-transform: uppercase;
     text-align: center;
+
 }
-#menu h2 span {
+#menu h2 span{
     font-size: 3rem;
 }
-
-#menu .colu {
+#menu #content{
     flex-flow: column;
-}
-#menu #content {
     background-color: inherit;
-    height: 80vh;
+    align-items: center;
+
 }
-#menu #content .price {
+#menu #content .price{
     color: yellow;
     font-size: 1rem;
     font-weight: bold;
+
 }
-#menu #content img {
+#menu #content img{
     width: 200px;
     height: 200px;
 }
-#menu #content .card-body {
+#menu #content .card-body{
+    text-align: center;
     color: white;
 }
-#menu #content .card-body h3 {
+#menu #content .card-body h3{
     font-size: 1.3rem;
+    
 }
-#menu #content .card-body .card-text {
+#menu #content .card-body .card-text{
     font-size: 0.9rem;
-    width: 120%;
-    position: relative;
-    left: -20px;
+    width: 100%;
+
 }
 /*end menu*/
+
 /*start gallery*/
-#gallery {
+#gallery{
+    padding:  5% 7%;
     overflow: hidden;
     box-sizing: border-box;
     background-size: cover;
-    background: black no-repeat center fixed;
+    background:black no-repeat center fixed;
     background-size: cover;
+
 }
-#gallery img:hover {
+#gallery img:hover{
     color: azure;
 }
-#gallery h2 {
+#gallery h2{
     color: white;
     font-weight: bold;
     font-size: 2.5rem;
     text-transform: uppercase;
     text-align: center;
+
 }
-#gallery h2 span {
+#gallery h2 span{
     font-size: 3rem;
 }
-#gallery .gallery {
+#gallery .col{
+    flex-flow: column;
+    justify-content: space-around;
+}
+#gallery img{
+    width: 300px;
+    
+}
+/*end gallery*/
+
+/*start book a table*/
+#booking-table {
+    padding:  5% 7%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background:url(img/bg-pattern.jpg) no-repeat center ;
+    background-size: cover;
+}
+#booking-table h2{
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+#booking-table h2 span{
+    font-size: 3rem;
+}
+#booking-table p,#booking-table i,#booking-table hr,#booking-table h3{
+    color:white;
+} 
+#booking-table .colu{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+}
+#booking-table .r,#booking-table .r1,#booking-table .working-houres{
+    padding-top:  4%;
+    padding-bottom: 5%;
+    flex-flow: column;
+}
+#booking-table label{
+    color: rgb(236, 196, 21);
+    font-weight: bolder;
+    font-size: small;
+}
+#booking-table input{
+    background: #000;
+    border: none;
+    width: 300px;
+    height: 9vh;
+    color: white;
+}
+#booking-table .btn{
+    text-transform: uppercase;
+    font-weight:800;
+    border-radius: 0;
+    margin: 15px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+#booking-table .working-houres{
+    width:  40%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background:black no-repeat center ;
+    background-size: cover;
+    padding: 3%;
+
+}
+#booking-table .working-houres .table-houres p {
+    display: flex;
+    flex-flow:row ;
+    justify-content: space-between;
+}
+/*end book a table*/
+
+/*start contact*/
+#contact {
+    padding:  5% 7%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background:black no-repeat center ;
+    background-size: cover;
+}
+#contact h2{
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+#contact p,#contact h3,#contact .copyright a{
+    color:white;
+
+}
+#contact i,#contact a{
+    color: rgb(177, 137, 7);
+}
+#contact .phone {
+    text-decoration: none;
+}
+#contact .contacts{
+    padding: 5% 6%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+#contact .footer-social{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+#contact iframe{
+    width: 1100px;
+}
+#contact p{
     text-align: center;
 }
-#gallery img {
-    display: inline-flex;
-    width: 30%;
-    height: 30%;
+#contact span{
+    font-size: 3rem;
 }
-
 /*media*/
-@media screen and (max-width: 414px) {
-    #home {
+@media screen and (max-width: 414px){
+    #home{
         text-align: center;
-   }
-    .about {
+    }
+    .about{
         flex-direction: column-reverse;
         text-align: center;
-   }
+    }
     .about .about-img img {
-        width: 100%;
-   }
-    .about .about-img a {
+        width:100%;
+        
+    }
+    .about .about-img a{
         width: 50px;
-        height: 50px;
-        top: -200px;
-        right: -160px;
-   }
-    .chef {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-   }
-    #special-dishes .card {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-   }
+        height:  50px;
+        top:  -200px;
+        right:-160px;
+    }
+.chef{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#special-dishes .card{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 }
